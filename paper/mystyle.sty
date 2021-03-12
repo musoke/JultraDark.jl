@@ -1,0 +1,32 @@
+\ProvidesPackage{mystyle}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color}
+\newcommand{\nm}[1]{\textcolor{red}{[{\it {\bf NM}: #1}]} }
+
+\usepackage[obeyFinal,colorinlistoftodos]{todonotes}
+
+\usepackage[markifdraft,dirty=*]{gitinfo2}
+
+\usepackage{afterpage}
+
+% Wide page for review tree
+\usepackage{geometry}
+
+% Enable graphics
+\usepackage{graphicx}
+\graphicspath{{./img/}{../img/}{../../img/}}
+\setkeys{Gin}{draft=false}
+
+% Usually should load hyperref last
+\usepackage[bookmarks]{hyperref}
+\hypersetup{final}
+
+% cleverref has to be loaded after hyperref
+\usepackage[capitalize,noabbrev]{cleveref}

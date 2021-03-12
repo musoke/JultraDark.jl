@@ -1,0 +1,31 @@
+\documentclass[twoside]{article}
+
+\usepackage{subfiles}
+\usepackage{mystyle}
+\usepackage{macros}
+
+\crefname{equation}{equation}{equations}
+
+\begin{document}
+
+\title{JultraDark}
+\author{%
+    Nathan Musoke
+}
+\date{\today}
+
+\maketitle
+
+\subfile{tex/abstract}
+
+
+\subfile{./tex/intro}
+\subfile{./tex/acknowledgements}
+
+\bibliographystyle{JHEP}
+\bibliography{autobib,manualbib}
+
+% \clearpage
+% \listoftodos[Todos]
+
+\end{document}
